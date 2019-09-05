@@ -68,12 +68,13 @@ header .header-case {
   display: block;
   line-height: 35px;
   float: right;
-  margin-right: 60px;
+  margin-right: 50px;
   margin-top: 53px;
   padding: 0 1px;
   border-radius: 5px 5px 5px 5px;
   font-size: 12px;
   /*border-color: aliceblue;*/
+  overflow: hidden;
 }
 
 header .header-case:hover {
@@ -90,6 +91,7 @@ header .header-case-color {
   border-radius: 30px 30px 30px 30px;
   font-size: 15px;
   background-color: blue;
+  overflow: hidden;
 }
 
 /*.logo h1 {
@@ -177,10 +179,11 @@ header .header-case-color {
   justify-items: center;
   align-content: center;
   position: relative;
+  overflow: hidden;
 }
 
 .item {
-  background: white;
+  background: green;
   height: 320px;
   width: 500px;
   margin-top: 10px;
@@ -188,6 +191,7 @@ header .header-case-color {
   display: flex;
   justify-content: center;
   align-items: center;
+  
 }
 
 /*텍스트 그냥 센터말고, 박스 정중앙에 놓으려면
@@ -198,21 +202,128 @@ displat:flex; justify-content: center; align-items: center;*/
   padding-top: 90px;
   font-size: 20px;
   color: white;
+  overflow: hidden;
 }
 
-.thrid {
-  background: skyblue;
-  width: 100%;
-  height: 520px;
-  margin: 0;
+.second__main img {
+  width: 700px;
+  transition: all 0.2s;
 }
 
-.thrid h1 {
+section {
+  padding: 70px 0;
+  /*margin-top: 50px;*/
+  background-color: blueviolet;
   text-align: center;
-  padding-top: 100px;
+}
+
+.second-ment {
+  max-width: 1200px;
+  width: 100%;
+  margin: 0 auto;
+}
+
+
+.second__main {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  grid-gap: 20px;
+  margin: 30px 15px 0px 15px;
+}
+
+header {
+  width: 100%;
+  margin: 0 auto;
+}
+
+header h1 {
+  margin: 0;
+  font-size: 50px;
+  color: orange;
+  font-weight: 500;
+}
+
+.singleblog {
+  position: relative;
+  overflow: hidden;
+  max-height: 800px;
+  height: 100%;
+  box-sizing: border-box;
+  box-shadow: rgba(0, 2px, 10px, #ccc);
+  transition: all 0.2s;
+  overflow: hidden;
+}
+
+.singleblog:hover{
+  box-shadow: 0 2px 13px #ccc;
+  transition: all .2s;
+}
+
+.singleblog:hover img{
+  transform:scale(1.1);
+  transition: all .2s;
+}
+
+.blogcontent {
+  position: absolute;
+  overflow:hidden;
+  left: 0;
+  bottom: -45px;
+  width: 100%;
+  color: #fff;
+  padding: 10px 5px;
+  background-color: blue;
+  transition: all .2s;
+  display: inline-block;
+
+}
+
+.singleblog:hover .blogcontent{
+  bottom: 0;
+  transition: all .2s;
+}
+
+.blogcontent h3 {
+  font-size: 20px;
+  font-weight: 500;
   margin: 0;
 }
 
+.blogcontent h3 span {
+  display: block;
+  font-size: 60%;
+  margin-top: 5px;
+  font-weight: 600;
+  color: yellow;
+}
+
+.blogcontent a {
+  font-size: 14px;
+  font-weight: 500;
+}
+
+.blogcontent .btn {
+  display: inline-block;
+  padding: 5px 10px;
+  border: 1px solid white;
+  border-radius: 3px;
+  font-weight: 400;
+}
+
+.blogcontent .btn:hover {
+  background-color: azure;
+  transition: all 0.2s;
+  text-decoration: none;
+}
+
+.blogcontent a:hover{
+  text-decoration: :underline;
+}
+
+
+
+
+/*--------------------------------------------*/
 .four {
   background-color: blue;
   width: 100%;
@@ -222,6 +333,7 @@ displat:flex; justify-content: center; align-items: center;*/
 
 .four h1 {
   margin: 0;
+  padding: 120px 0 0 0;
   text-align: center;
 }
 
